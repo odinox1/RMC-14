@@ -31,7 +31,6 @@
   icon: "CMJobIconASO"
   requireAdminNotify: true
   joinNotifyCrew: false
-  marineAuthorityLevel: 13
   supervisors: cm-job-supervisors-co
   accessGroups:
   - ASO

@@ -7,7 +7,6 @@
   startingGear: RMCGearSurvivorNewVaraderoResearcher
   accessGroups:
   - ColonistMedical
-  useLoadoutOfJob: CMSurvivorScientist
 
 - type: startingGear
   parent: RMCGearSurvivorScientist

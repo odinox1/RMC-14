@@ -1,5 +1,5 @@
 ﻿- type: job
-  parent: RMCJobRibbonBase
+  parent: CMJobBase
   id: CMLiaison
   name: cm-job-name-liaison
   description: cm-job-description-liaison
@@ -53,12 +53,13 @@
       icon:
         sprite: _RMC14/Interface/map_blips.rsi
         state: cl
+    - type: RMCRibbon
     - type: RMCTrackable
 
 - type: startingGear
   id: CMGearLiaison
   equipment:
-    jumpsuit: CMJumpsuitLiaisonIvy
+    jumpsuit: CMJumpsuitLiaisonBlack
     shoes: RMCShoesLaceup
     id: CMIDCardLiaison
     ears: RMCHeadsetLiaison

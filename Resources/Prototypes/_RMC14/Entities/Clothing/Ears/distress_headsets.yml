@@ -61,9 +61,6 @@
   description: A headset commonly worn by WeYa corporate personnel.
   suffix: WeYa, Colony
   components:
-  - type: Sprite
-    sprite: _RMC14/Objects/Clothing/headsets.rsi
-    state: we_ya_headset
   - type: ContainerFill
     containers:
       key_slots:
@@ -71,7 +68,7 @@
 
 # For WeYa PMC
 - type: entity
-  parent: RMCHeadsetDistressWeYa
+  parent: RMCHeadsetIconsWeYa
   id: RMCHeadsetDistressPMC
   name: PMC headset
   description: A special headset used by corporate personnel.
@@ -101,7 +98,7 @@
     radioTextIncrease: 2
 
 - type: entity
-  parent: RMCHeadsetDistressWeYa
+  parent: RMCHeadsetIconsWeYa
   id: RMCHeadsetDistressPMCDirector
   name: PMC headset
   description: A special headset used by corporate personnel.
@@ -124,7 +121,7 @@
 
 # For WeYa lawyers
 - type: entity
-  parent: RMCHeadsetDistressWeYa
+  parent: RMCHeadsetIcons
   id: RMCHeadsetDistressGoon
   name: We-Ya headset
   description: A special headset used by corporate personnel.
@@ -156,7 +153,7 @@
     radioTextIncrease: 2
 
 - type: entity
-  parent: RMCHeadsetDistressWeYa
+  parent: RMCHeadsetIcons
   id: RMCHeadsetDistressLawyerWeYa
   name: We-Ya headset
   description: A special headset used by corporate personnel.

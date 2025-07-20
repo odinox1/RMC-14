@@ -22,7 +22,6 @@
   startingGear: CMGearMilitaryWarden
   icon: "CMJobIconMilitaryWarden"
   joinNotifyCrew: false
-  marineAuthorityLevel: 4
   supervisors: cm-job-supervisors-cmp
   accessGroups:
   - CMWarden

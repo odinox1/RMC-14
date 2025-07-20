@@ -22,7 +22,6 @@
   icon: "CMJobIconStaffOfficer"
   requireAdminNotify: true
   joinNotifyCrew: false
-  marineAuthorityLevel: 12
   supervisors: cm-job-supervisors-co
   accessGroups:
   - SO

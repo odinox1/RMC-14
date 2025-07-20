@@ -50,7 +50,6 @@
   icon: "CMJobIconCommandingOfficer"
   requireAdminNotify: true
   joinNotifyCrew: true
-  marineAuthorityLevel: 15
   supervisors: cm-job-supervisors-marine-high-command
   whitelisted: true
   accessGroups:

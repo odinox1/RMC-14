@@ -6,8 +6,9 @@
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Misc/spacecash.rsi
+    state: spacecash1
     layers:
-    - state: spacecash
+    - state: spacecash1
       map: ["base"]
   - type: Item
     size: Tiny
@@ -21,16 +22,14 @@
     count: 1
     baseLayer: base
     layerStates:
-    - spacecash
-    - spacecash_10
-    - spacecash_20
-    - spacecash_50
-    - spacecash_100
-    - spacecash_200
-    - spacecash_500
-    - spacecash_1000
-  - type: StackLayerThreshold
-    thresholds: [10, 20, 50, 100, 200, 500, 1000]
+    - spacecash1
+    - spacecash10
+    - spacecash20
+    - spacecash50
+    - spacecash100
+    - spacecash200
+    - spacecash500
+    - spacecash1000
   - type: PhysicalComposition
     materialComposition:
       Dollar: 1
@@ -47,17 +46,19 @@
   name: 1 dollar bill
   unit: materials-unit-bill
   stackEntity: RMCSpaceCash1
-  icon: { sprite: /Textures/_RMC14/Objects/Misc/spacecash.rsi, state: spacecash }
+  icon: { sprite: /Textures/_RMC14/Objects/Misc/spacecash.rsi, state: spacecash1 }
   price: 1
 
 - type: stack
   id: Dollar
   name: 1 dollar bill
-  icon: { sprite: /Textures/_RMC14/Objects/Misc/spacecash.rsi, state: spacecash }
+  icon: { sprite: /Textures/_RMC14/Objects/Misc/spacecash.rsi, state: spacecash1 }
   spawn: RMCSpaceCash1
 
 - type: Tag
   id: RMCSpaceCash
+
+# TODO RMC14 make different bills
 
 - type: entity
   parent: RMCSpaceCash1
@@ -65,9 +66,8 @@
   suffix: 10
   components:
   - type: Sprite
-    state: spacecash_10
+    state: spacecash10
   - type: Stack
-    stackType: Dollar
     count: 10
 
 - type: entity
@@ -76,7 +76,7 @@
   suffix: 20
   components:
   - type: Sprite
-    state: spacecash_20
+    state: spacecash20
   - type: Stack
     count: 20
 
@@ -86,7 +86,7 @@
   suffix: 50
   components:
   - type: Sprite
-    state: spacecash_50
+    state: spacecash50
   - type: Stack
     count: 50
 
@@ -96,7 +96,7 @@
   suffix: 100
   components:
   - type: Sprite
-    state: spacecash_100
+    state: spacecash100
   - type: Stack
     count: 100
 
@@ -106,7 +106,7 @@
   suffix: 200
   components:
   - type: Sprite
-    state: spacecash_200
+    state: spacecash200
   - type: Stack
     count: 200
 
@@ -116,7 +116,7 @@
   suffix: 500
   components:
   - type: Sprite
-    state: spacecash_500
+    state: spacecash500
   - type: Stack
     count: 500
 
@@ -126,7 +126,6 @@
   suffix: 1000
   components:
   - type: Sprite
-    state: spacecash_1000
+    state: spacecash1000
   - type: Stack
-    stackType: Dollar
     count: 1000

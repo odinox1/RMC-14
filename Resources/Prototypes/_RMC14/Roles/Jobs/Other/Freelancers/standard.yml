@@ -24,9 +24,8 @@
       skills:
         RMCSkillFireman: 1
         RMCSkillConstruction: 2
-        RMCSkillEngineer: 2
+        RMCSkillEngineer: 1
         RMCSkillEndurance: 2
-        RMCSkillFirearms: 1
     - type: SquadArmorWearer
     - type: JobPrefix
       prefix: rmc-job-prefix-freelancer-standard
@@ -95,9 +94,7 @@
 - type: startingGear
   id: RMCGearFreelancerStandard
   equipment:
-    back: RMCSatchelLightpackFreelancerStandard
-    belt: RMCMAR40BeltFilled
-    suitstorage: WeaponRifleMAR40
+    back: RMCSatchelLightpack
     gloves: RMCHandsVeteranPMC
     jumpsuit: RMCJumpsuitFreelancer
     outerClothing: CMArmorFreelancer
@@ -105,7 +102,6 @@
     id: RMCIDCardFreelancer
     ears: RMCHeadsetDistressDukes
     pocket1: RMCPouchFirstAidERTFill
-    pocket2: RMCPouchExplosiveFilledHEDP
 
 - type: playTimeTracker
   id: RMCJobFreelancerStandard

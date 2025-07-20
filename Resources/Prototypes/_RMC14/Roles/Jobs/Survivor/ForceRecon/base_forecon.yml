@@ -14,7 +14,6 @@
   greeting: rmc-job-greeting-forecon
   playTimeTracker: RMCSurvivorForecon
   spawnMenuRoleName: FORECON Survivor (Base)
-  useLoadoutOfJob: CMSurvivor
   hidden: true
 
 - type: startingGear

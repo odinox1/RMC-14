@@ -25,11 +25,3 @@
     quickEquip: false
     slots:
     - suitstorage
-
-- type: entity
-  parent: CMSyringe
-  id: RMCPrefilledSyringe
-  suffix: RMC14, Inject
-  components:
-  - type: Injector
-    toggleState: Inject

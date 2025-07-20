@@ -8,7 +8,6 @@
   dummyStartingGear: CMGearRiflemanEquipped
   icon: "CMJobIconEmpty"
   joinNotifyCrew: false
-  marineAuthorityLevel: 1
   supervisors: cm-job-supervisors-sl
   ranks:
     RMCRankLanceCorporal:

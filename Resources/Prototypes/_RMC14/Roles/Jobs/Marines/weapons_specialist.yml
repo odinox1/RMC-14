@@ -22,7 +22,6 @@
   dummyStartingGear: CMGearWeaponsSpecialistEquipped
   icon: "CMJobIconWeaponsSpecialist"
   joinNotifyCrew: false
-  marineAuthorityLevel: 1
   supervisors: cm-job-supervisors-sl
   accessGroups:
   - WeaponSpec

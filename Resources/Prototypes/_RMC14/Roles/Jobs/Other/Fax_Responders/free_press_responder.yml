@@ -1,5 +1,5 @@
 - type: job
-  parent: RMCJobRibbonBase
+  parent: CMJobBase
   id: CMFreePressResponder
   name: rmc-job-name-free-press-responder
   description: rmc-job-description-free-press-responder
@@ -32,6 +32,7 @@
         RMCSkillPowerLoader: 1
         RMCSkillSurgery: 1
         RMCSkillVehicles: 2
+    - type: RMCRibbon
   hasIcon: false
   hidden: true
 

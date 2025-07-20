@@ -35,7 +35,6 @@ public sealed class SupplyDropComputerBui(EntityUid owner, Enum uiKey) : BoundUs
         _window.Latitude.Value = supplyDrop.Coordinates.Y;
         _window.LastUpdateAt = supplyDrop.LastLaunchAt;
         _window.NextUpdateAt = supplyDrop.NextLaunchAt;
-        _window.CrateStatusLabel.Text = Loc.GetString("ui-supply-drop-crate-status", ("hasCrate", supplyDrop.HasCrate));
-
+        _window.CrateStatusLabel.Text = supplyDrop.HasCrate ? "Supply Pad Status: crate loaded." : "No crate loaded.";
     }
 }

@@ -2,26 +2,30 @@
 - type: loadout
   id: BalaclavaRMC
   cost: 2
-  equipment:
-    mask: RMCMaskBalaclava
+  storage:
+    back:
+    - RMCMaskBalaclava
 
 - type: loadout
   id: BalaclavaGreenRMC
   cost: 2
-  equipment:
-    mask: RMCMaskBalaclavaGreen
+  storage:
+    back:
+    - RMCMaskBalaclavaGreen
 
 - type: loadout
   id: CoifRMC
   cost: 2
-  equipment:
-    mask: CMMaskCoif
+  storage:
+    back:
+    - CMMaskCoif
 
 - type: loadout
   id: GasMaskRMC
   cost: 2
-  equipment:
-    mask: CMMaskGas
+  storage:
+    back:
+    - CMMaskGas
 
 - type: loadout
   id: MaskScarfSquadRMC
@@ -33,180 +37,209 @@
 - type: loadout
   id: MaskScarfRedRMC
   cost: 2
-  equipment:
-    mask: RMCMaskScarfRed
-
+  storage:
+    back:
+    - RMCMaskScarfRed
 
 - type: loadout
   id: MaskScarfBlackRMC
   cost: 2
-  equipment:
-    mask: RMCMaskScarfBlack
+  storage:
+    back:
+    - RMCMaskScarfBlack
 
 - type: loadout
   id: MaskScarfGrayRMC
   cost: 2
-  equipment:
-    mask: RMCMaskScarfGray
+  storage:
+    back:
+    - RMCMaskScarfGray
 
 - type: loadout
   id: MaskScarfGreenRMC
   cost: 2
-  equipment:
-    mask: RMCMaskScarfGreen
+  storage:
+    back:
+    - RMCMaskScarfGreen
 
 - type: loadout
   id: MaskScarfTanRMC
   cost: 2
-  equipment:
-    mask: RMCMaskScarfTan
+  storage:
+    back:
+    - RMCMaskScarfTan
 
 - type: loadout
   id: NeckerchiefSquadRMC
   cost: 2
-  equipment:
-    mask: RMCMaskNeckerchiefSquad
+  storage:
+    back:
+    - RMCMaskNeckerchiefSquad
 
 - type: loadout
   id: NeckerchiefTanRMC
   cost: 2
-  equipment:
-    mask: RMCMaskNeckerchiefTan
+  storage:
+    back:
+    - RMCMaskNeckerchiefTan
 
 - type: loadout
   id: NeckerchiefBlackRMC
   cost: 2
-  equipment:
-    mask: RMCMaskNeckerchiefBlack
+  storage:
+    back:
+    - RMCMaskNeckerchiefBlack
 
 - type: loadout
   id: NeckerchiefGrayRMC
   cost: 2
-  equipment:
-    mask: RMCMaskNeckerchiefGray
+  storage:
+    back:
+    - RMCMaskNeckerchiefGray
 
 - type: loadout
   id: NeckerchiefGreenRMC
   cost: 2
-  equipment:
-    mask: RMCMaskNeckerchiefGreen
+  storage:
+    back:
+    - RMCMaskNeckerchiefGreen
 
 - type: loadout
   id: NeckerchiefWhiteRMC
   cost: 2
-  equipment:
-    mask: RMCMaskNeckerchiefWhite
+  storage:
+    back:
+    - RMCMaskNeckerchiefWhite
 
 - type: loadout
   id: TornScarfBlackRMC
   cost: 2
-  equipment:
-    mask: RMCMaskTornScarfBlack
+  storage:
+    back:
+    - RMCMaskTornScarfBlack
 
 - type: loadout
   id: TornScarfDesertRMC
   cost: 2
-  equipment:
-    mask: RMCMaskTornScarfDesert
+  storage:
+    back:
+    - RMCMaskTornScarfDesert
 
 - type: loadout
   id: TornScarfGreenRMC
   cost: 2
-  equipment:
-    mask: RMCMaskTornScarfGreen
+  storage:
+    back:
+    - RMCMaskTornScarfGreen
 
 - type: loadout
   id: TornScarfGreyRMC
   cost: 2
-  equipment:
-    mask: RMCMaskTornScarfGrey
+  storage:
+    back:
+    - RMCMaskTornScarfGrey
 
 - type: loadout
   id: TornScarfUrbanRMC
   cost: 2
-  equipment:
-    mask: RMCMaskTornScarfUrban
+  storage:
+    back:
+    - RMCMaskTornScarfUrban
 
 - type: loadout
   id: TornScarfSnowRMC
   cost: 2
-  equipment:
-    mask: RMCMaskTornScarfSnow
+  storage:
+    back:
+    - RMCMaskTornScarfSnow
 
 - type: loadout
   id: SmockRMC
   cost: 2
-  equipment:
-    mask: RMCMaskSmockBlack
+  storage:
+    back:
+    - RMCMaskSmockBlack
 
 - type: loadout
   id: SmockCamoRMC
   cost: 2
-  equipment:
-    mask: RMCMaskSmockCamo
+  storage:
+    back:
+    - RMCMaskSmockCamo
 
 - type: loadout
   id: CoifGreenRMC
   cost: 2
-  equipment:
-    mask: RMCMaskCoifGreen
+  storage:
+    back:
+    - RMCMaskCoifGreen
 
 - type: loadout
   id: CoifGreyRMC
   cost: 2
-  equipment:
-    mask: RMCMaskCoifGrey
+  storage:
+    back:
+    - RMCMaskCoifGrey
 
 - type: loadout
   id: CoifTanRMC
   cost: 2
-  equipment:
-    mask: RMCMaskCoifTan
+  storage:
+    back:
+    - RMCMaskCoifTan
 
 - type: loadout
   id: KeffiyehRMC
   cost: 2
-  equipment:
-    mask: RMCMaskKeffiyeh
+  storage:
+    back:
+    - RMCMaskKeffiyeh
 
 - type: loadout
   id: KeffiyehBlackRMC
   cost: 2
-  equipment:
-    mask: RMCMaskKeffiyehBlack
+  storage:
+    back:
+    - RMCMaskKeffiyehBlack
 
 - type: loadout
   id: KeffiyehBlueRMC
   cost: 2
-  equipment:
-    mask: RMCMaskKeffiyehBlue
+  storage:
+    back:
+    - RMCMaskKeffiyehBlue
 
 - type: loadout
   id: KeffiyehGreenRMC
   cost: 2
-  equipment:
-    mask: RMCMaskKeffiyehGreen
+  storage:
+    back:
+    - RMCMaskKeffiyehGreen
 
 - type: loadout
   id: KeffiyehWhiteRMC
   cost: 2
-  equipment:
-    mask: RMCMaskKeffiyehWhite
+  storage:
+    back:
+    - RMCMaskKeffiyehWhite
 
 - type: loadout
   id: KeffiyehRedRMC
   cost: 2
-  equipment:
-    mask: RMCMaskKeffiyehRed
+  storage:
+    back:
+    - RMCMaskKeffiyehRed
 
 - type: loadout
   id: BalaclavaSkullBlueRMC
   cost: 4
-  equipment:
-    mask: RMCMaskBalaclavaSkullBlue
+  storage:
+    back:
+    - RMCMaskBalaclavaSkullBlue
 
 - type: loadout
   id: BalaclavaSkullBlackRMC
   cost: 4
-  equipment:
-    mask: RMCMaskBalaclavaSkullBlack
+  storage:
+    back:
+    - RMCMaskBalaclavaSkullBlack

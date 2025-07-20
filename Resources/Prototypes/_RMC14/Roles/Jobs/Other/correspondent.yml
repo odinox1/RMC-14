@@ -1,5 +1,5 @@
 ﻿- type: job
-  parent: RMCJobRibbonBase
+  parent: CMJobBase
   id: CMCorrespondent
   name: cm-job-name-correspondent
   description: cm-job-description-correspondent
@@ -31,6 +31,7 @@
       icon:
         sprite: _RMC14/Interface/map_blips.rsi
         state: correspondent
+    - type: RMCRibbon
   hasIcon: false
 
 - type: startingGear

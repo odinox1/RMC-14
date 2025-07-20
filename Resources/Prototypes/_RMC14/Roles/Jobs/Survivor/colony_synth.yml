@@ -1,5 +1,5 @@
 - type: job
-  parent: RMCJobRibbonBase
+  parent: CMJobBase
   id: RMCJobSyntheticColony
   name: rmc-job-name-synth-colony
   description: rmc-job-description-synth-colony
@@ -42,6 +42,7 @@
     - type: GrenadeSpecWhitelist
     - type: ScoutWhitelist
     - type: SniperWhitelist
+    - type: RMCRibbon
     - type: PyroWhitelist
     - type: TacticalMapIcon
       icon:
@@ -102,7 +103,6 @@
       - type: RMCSuicide
         damage: { }
   hidden: true
-  useLoadoutOfJob: RMCJobSyntheticColony # for inheritance
 
 - type: startingGear
   id: RMCGearSyntheticColonist

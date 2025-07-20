@@ -20,10 +20,8 @@
         !type:DamageTrigger
         damage: 3000
       behaviors:
-        - !type:ChangeConstructionNodeBehavior
-          node: girder
-        - !type:DoActsBehavior
-          acts: ["Breakage"]
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
   - type: IconSmooth
     key: walls
     base: metal

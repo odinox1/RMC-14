@@ -28,9 +28,6 @@ public sealed partial record SpawnVariation
     public ResPath Spawn;
 
     [DataField]
-    public string NightmareScenario = string.Empty;
-
-    [DataField]
     public Vector2 Offset;
 
     [DataField]

@@ -1,7 +1,7 @@
 ﻿- type: entity
   abstract: true
   parent: [ CMBaseWeaponGun, BaseItem, RMCBaseAttachableHolder ]
-  id: RMCBaseWeaponRifleNoDualWieldPenaltyNoMagazineProvider
+  id: CMBaseWeaponRifleNoDualWieldPenalty
   components:
   - type: Gun
     shotsPerBurst: 3
@@ -52,6 +52,8 @@
       gun_chamber: !type:ContainerSlot
   - type: StaticPrice
     price: 500
+  - type: MagazineAmmoProvider
+    autoEject: true
   - type: RMCAmmoEject
   - type: Appearance
   - type: RMCNameItemOnVend
@@ -63,8 +65,8 @@
 
 - type: entity
   abstract: true
-  parent: RMCBaseWeaponRifleNoDualWieldPenaltyNoMagazineProvider
-  id: RMCBaseWeaponRifleNoMagazineProvider
+  parent: CMBaseWeaponRifleNoDualWieldPenalty
+  id: CMBaseWeaponRifle
   components:
   - type: GunDualWielding
     weaponGroup: Rifle
@@ -73,16 +75,6 @@
     accuracyMultiplier: 1
     accuracyMultiplierUnwielded: 0.65
   - type: GunGroupPenalty
-
-- type: entity
-  abstract: true
-  parent: [RMCBaseWeaponRifleNoDualWieldPenaltyNoMagazineProvider, RMCBaseWeaponGunMagazineProvider]
-  id: CMBaseWeaponRifleNoDualWieldPenalty
-
-- type: entity
-  abstract: true
-  parent: [RMCBaseWeaponRifleNoMagazineProvider, RMCBaseWeaponGunMagazineProvider]
-  id: CMBaseWeaponRifle
 
 - type: entity
   abstract: true

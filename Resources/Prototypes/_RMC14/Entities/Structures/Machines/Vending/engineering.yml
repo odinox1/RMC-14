@@ -163,7 +163,7 @@
       entries:
       - id: Igniter
         amount: 8
-      - id: RMCTimerTrigger
+      - id: TimerTrigger
         amount: 4
       - id: ProximitySensor
         amount: 4

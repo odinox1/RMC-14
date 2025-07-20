@@ -1,5 +1,4 @@
 ﻿using System.Numerics;
-using Content.Shared._RMC14.Marines.Roles.Ranks;
 using Content.Shared.Mobs;
 using Content.Shared.Roles;
 using Robust.Shared.Prototypes;
@@ -166,6 +165,5 @@ public readonly record struct OverwatchMarine(
     bool Deployed,
     OverwatchLocation Location,
     string AreaName,
-    Vector2? LeaderDistance,
-    ProtoId<RankPrototype>? Rank
+    Vector2? LeaderDistance
 );

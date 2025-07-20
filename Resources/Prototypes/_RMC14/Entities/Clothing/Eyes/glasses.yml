@@ -308,12 +308,6 @@
     toggledRsi:
       sprite: _RMC14/Objects/Clothing/Eyes/Glasses/ballistic_goggles.rsi
       state: helmet-down
-    hatRsi:
-      sprite: _RMC14/Objects/Clothing/Eyes/Glasses/ballistic_goggles.rsi
-      state: hat
-    hatToggledRsi:
-      sprite: _RMC14/Objects/Clothing/Eyes/Glasses/ballistic_goggles.rsi
-      state: hat-down
 
 - type: entity
   parent: RMCGogglesBallistic
@@ -332,12 +326,6 @@
     toggledRsi:
       sprite: _RMC14/Objects/Clothing/Eyes/Glasses/black_ballistic_goggles.rsi
       state: helmet-down
-    hatRsi:
-      sprite: _RMC14/Objects/Clothing/Eyes/Glasses/black_ballistic_goggles.rsi
-      state: hat
-    hatToggledRsi:
-      sprite: _RMC14/Objects/Clothing/Eyes/Glasses/black_ballistic_goggles.rsi
-      state: hat-down
 
 - type: entity
   parent: RMCGogglesBallistic
@@ -356,12 +344,6 @@
     toggledRsi:
       sprite: _RMC14/Objects/Clothing/Eyes/Glasses/orange_ballistic_goggles.rsi
       state: helmet-down
-    hatRsi:
-      sprite: _RMC14/Objects/Clothing/Eyes/Glasses/orange_ballistic_goggles.rsi
-      state: hat
-    hatToggledRsi:
-      sprite: _RMC14/Objects/Clothing/Eyes/Glasses/orange_ballistic_goggles.rsi
-      state: hat-down
 
 - type: entity
   parent: RMCGogglesBallistic
@@ -380,12 +362,6 @@
     toggledRsi:
       sprite: _RMC14/Objects/Clothing/Eyes/Glasses/red_ballistic_goggles.rsi
       state: helmet-down
-    hatRsi:
-      sprite: _RMC14/Objects/Clothing/Eyes/Glasses/red_ballistic_goggles.rsi
-      state: hat
-    hatToggledRsi:
-      sprite: _RMC14/Objects/Clothing/Eyes/Glasses/red_ballistic_goggles.rsi
-      state: hat-down
 
 - type: entity
   parent: RMCGogglesBallistic
@@ -404,12 +380,6 @@
     toggledRsi:
       sprite: _RMC14/Objects/Clothing/Eyes/Glasses/blue_ballistic_goggles.rsi
       state: helmet-down
-    hatRsi:
-      sprite: _RMC14/Objects/Clothing/Eyes/Glasses/blue_ballistic_goggles.rsi
-      state: hat
-    hatToggledRsi:
-      sprite: _RMC14/Objects/Clothing/Eyes/Glasses/blue_ballistic_goggles.rsi
-      state: hat-down
 
 - type: entity
   parent: RMCGogglesBallistic
@@ -428,12 +398,6 @@
     toggledRsi:
       sprite: _RMC14/Objects/Clothing/Eyes/Glasses/purple_ballistic_goggles.rsi
       state: helmet-down
-    hatRsi:
-      sprite: _RMC14/Objects/Clothing/Eyes/Glasses/purple_ballistic_goggles.rsi
-      state: hat
-    hatToggledRsi:
-      sprite: _RMC14/Objects/Clothing/Eyes/Glasses/purple_ballistic_goggles.rsi
-      state: hat-down
 
 - type: entity
   parent: RMCGogglesBallistic
@@ -452,12 +416,6 @@
     toggledRsi:
       sprite: _RMC14/Objects/Clothing/Eyes/Glasses/yellow_ballistic_goggles.rsi
       state: helmet-down
-    hatRsi:
-      sprite: _RMC14/Objects/Clothing/Eyes/Glasses/yellow_ballistic_goggles.rsi
-      state: hat
-    hatToggledRsi:
-      sprite: _RMC14/Objects/Clothing/Eyes/Glasses/yellow_ballistic_goggles.rsi
-      state: hat-down
 
 - type: entity
   parent: RMCGogglesBallistic

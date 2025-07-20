@@ -58,7 +58,6 @@
     - type: EquipSurvivorPreset
       preset: RMCSurvivorPresetForeconNoPistol
     - type: SpotterWhitelist
-  useLoadoutOfJob: RMCSurvivorCommandingOfficer
   hidden: true
 
 - type: startingGear

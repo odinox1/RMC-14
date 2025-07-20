@@ -25,7 +25,6 @@
   dummyStartingGear: CMGearHospitalCorpsmanEquipped
   icon: "CMJobIconHospitalCorpsman"
   joinNotifyCrew: false
-  marineAuthorityLevel: 1
   supervisors: cm-job-supervisors-sl
   accessGroups:
   - HospitalCorpsman

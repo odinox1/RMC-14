@@ -1,13 +1,13 @@
 ﻿using Content.Server.Hands.Systems;
 using Content.Server.Players.PlayTimeTracking;
 using Content.Shared._RMC14.CCVar;
+using Content.Shared._RMC14.Ribbon;
 using Content.Shared.Coordinates;
 using Content.Shared.GameTicking;
 using Content.Shared.Roles;
 using Robust.Shared.Configuration;
 using Robust.Shared.Prototypes;
 using Content.Shared._RMC14.UniformAccessories;
-using Content.Shared._RMC14.Medal;
 
 namespace Content.Server._RMC14.Medal;
 
@@ -18,6 +18,16 @@ public sealed class PlaytimeMedalSystem : EntitySystem
     [Dependency] private readonly PlayTimeTrackingManager _playTimeTracking = default!;
     [Dependency] private readonly IPrototypeManager _prototype = default!;
 
+    private static readonly EntProtoId BronzeMedal = "RMCMedalBronzeService";
+    private static readonly EntProtoId SilverMedal = "RMCMedalSilverService";
+    private static readonly EntProtoId GoldMedal = "RMCMedalGoldService";
+    private static readonly EntProtoId PlatinumMedal = "RMCMedalPlatinumService";
+
+    private static readonly EntProtoId WhiteRibbon = "RMCMedalRibbonWhiteService";
+    private static readonly EntProtoId YellowRibbon = "RMCMedalRibbonYellowService";
+    private static readonly EntProtoId RedRibbon = "RMCMedalRibbonRedService";
+    private static readonly EntProtoId BlueRibbon = "RMCMedalRibbonBlueService";
+
     private TimeSpan _bronzeTime;
     private TimeSpan _silverTime;
     private TimeSpan _goldTime;
@@ -26,7 +36,6 @@ public sealed class PlaytimeMedalSystem : EntitySystem
     public override void Initialize()
     {
         base.Initialize();
-
         SubscribeLocalEvent<PlayerSpawnCompleteEvent>(OnPlayerSpawnComplete);
 
         Subs.CVar(_config, RMCCVars.RMCPlaytimeBronzeMedalTimeHours, v => _bronzeTime = TimeSpan.FromHours(v), true);
@@ -47,24 +56,31 @@ public sealed class PlaytimeMedalSystem : EntitySystem
             return;
         }
 
-        if (job.Medals is not { } medals)
-            return;
+        EntProtoId? medalId = null;
+        if (HasComp<RMCRibbonComponent>(ev.Mob))
+        {
+            if (time >= _platinumTime)
+                medalId = BlueRibbon;
+            else if (time >= _goldTime)
+                medalId = RedRibbon;
+            else if (time >= _silverTime)
+                medalId = YellowRibbon;
+            else if (time >= _bronzeTime)
+                medalId = WhiteRibbon;
+        }
+        else
+        {
+            if (time >= _platinumTime)
+                medalId = PlatinumMedal;
+            else if (time >= _goldTime)
+                medalId = GoldMedal;
+            else if (time >= _silverTime)
+                medalId = SilverMedal;
+            else if (time >= _bronzeTime)
+                medalId = BronzeMedal;
+        }
 
-        RMCPlaytimeMedalType? medalType = null;
-
-        if (time >= _platinumTime)
-            medalType = RMCPlaytimeMedalType.Platinum;
-        else if (time >= _goldTime)
-            medalType = RMCPlaytimeMedalType.Gold;
-        else if (time >= _silverTime)
-            medalType = RMCPlaytimeMedalType.Silver;
-        else if (time >= _bronzeTime)
-            medalType = RMCPlaytimeMedalType.Bronze;
-
-        if (medalType == null)
-            return;
-
-        if (!medals.TryGetValue(medalType.Value, out var medalId))
+        if (medalId == null)
             return;
 
         var medal = SpawnAtPosition(medalId, ev.Mob.ToCoordinates());
